@@ -1,0 +1,25 @@
+# SPDX-License-Identifier: GPL-2.0-only
+
+if LKSS_DRIVERS_LAB1
+
+config LKSS_DRIVERS_LAB1_EX1
+	tristate "Lab1 Ex1 - Hello World"
+	help
+	  Compile Lab1 Ex1: Simple hello world module
+
+config LKSS_DRIVERS_LAB1_EX4
+	tristate "Lab1 Ex4 - Ooops module"
+	help
+	  Compile Lab1 Ex4: Simple module to generate an oops
+
+config LKSS_DRIVERS_LAB1_EX5
+	tristate "Lab1 Ex5 - Kernel API demo"
+	help
+	  Compile Lab1 Ex5: Module demonstrating kmalloc, kernel timers and spinlocks
+
+config LKSS_DRIVERS_LAB1_EX6
+	tristate "Lab1 Ex6 - Basic platform driver"
+	help
+	  Compile Lab1 Ex6: Basic platform driver to demonstrate DT properties API
+
+endif # LKSS_DRIVERS_LAB1
