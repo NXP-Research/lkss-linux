@@ -192,12 +192,12 @@ static int __init mytimer_init(void) {
  * Cleanup function for the module
  */
 static void __exit mytimer_exit(void) {
-        /* TODO: Unregister misc device */
-
         /* Delete timer */
         timer_delete_sync(&timer);
 
         destroy_list();
+
+        /* TODO: Unregister misc device */
 
         pr_info("%s: Goodbye!\n", DEVICE_NAME);
 }
