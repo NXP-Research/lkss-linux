@@ -3,7 +3,6 @@
 #include <linux/module.h>	/* Core header for loading LKMs into the kernel */
 #include <linux/fs.h>		/* File operations structure and related functions */
 #include <linux/cdev.h>		/* Character device support */
-#include <linux/miscdevice.h>	/* Misc device support */
 #include <linux/uaccess.h>	/* Functions for user space/kernel space access */
 
 /* Define the device name */
@@ -122,15 +121,12 @@ static struct file_operations fops = {
 };
 
 
-/* TODO 2: Declare miscdevice */
-
 /**
  * Module initialization function
  */
 static int __init char_init(void)
 {
         /* TODO 1: Register the character device and get a dynamic major number */
-        /* TODO 2: Use misc_register - log major 10 below */
 
         /* TODO 1: Check for registration failed */
 
@@ -145,7 +141,6 @@ static int __init char_init(void)
 static void __exit char_exit(void)
 {
         /* TODO 1: Unregister the character device */
-        /* TODO 2: Use misc_unregister */
 
         /* TODO 1: Log the action */
 }
