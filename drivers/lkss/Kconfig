@@ -24,4 +24,13 @@ config LKSS_DRIVERS_LAB2
 
 source "drivers/lkss/lab2/Kconfig"
 
+config LKSS_DRIVERS_LAB3
+	bool "Linux Kernel Summer School lab 3 drivers"
+	default n
+	help
+	  Enable support for lab 3 drivers.
+
+source "drivers/lkss/lab3/Kconfig"
+
+
 endif # LKSS_DRIVERS
