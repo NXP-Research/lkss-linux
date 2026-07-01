@@ -126,7 +126,6 @@ static int st7789_draw_pixel(struct st7789_priv *priv,
 	return 0;
 }
 
-E
 /* Demo: exercises 4-9 */
 
 static void st7789_demo(struct st7789_priv *priv)
