@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: GPL-2.0-only
+
+if LKSS_DRIVERS_LAB4
+
+config LKSS_DRIVERS_LAB4_EX
+	tristate "Lab 4 - BMP280 I2C pressure/temperature sensor driver"
+	help
+	  Compile Lab4 BMP280 I2C pressure/temperature sensor driver
+
+endif # LKSS_DRIVERS_LAB4
